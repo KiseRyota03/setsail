@@ -1,0 +1,620 @@
+@import "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css";
+.header {
+    height:80px;
+    background-color: white;
+}
+.header_navbar {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.header_list {
+    list-style: none;
+    padding-left: 0;
+}
+.header_list-item {
+    display:inline-block;
+    padding-top: 8px;
+    font-size: 15px;
+    padding-right: 50px;
+    color: #212121;
+    cursor: pointer;
+    font-weight: 600;
+}
+.header_list-item:hover {
+    color: #3abdc1;
+}
+.header_list-item::after {
+    content:'';
+    width:0%;
+    height: 3px;
+    background: #3FD0D4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.header_list-item:hover::after {
+    width:100%;
+}
+.header_logo {
+    width:13%;
+}
+.header_logo-icon {
+    width:158px;
+    height:70px;
+    float: left;
+    position: absolute;
+    padding: 13px 0px 8px 20px;
+    cursor: pointer;
+}
+.header_list-icon {
+    display: flex;
+    padding-right: 13px;
+}
+.header_list-icon-item{
+    list-style: none;
+    margin-left:10px;
+    margin-right: 10px;
+}
+.header_list-icon-item-click {
+    font-size:20px;
+    cursor: pointer;
+    color:#212121;
+    transition: 0.3s ease-in-out;
+}
+.header_list-icon-item-click:hover {
+    color: #3FD0D4;
+}
+.header-list-menu1{
+    display: none;
+}
+
+.header_list-item:hover .header-list-menu1{
+    display: block;
+    position: absolute;
+    width: 400px;
+    top:100%;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header-menu1-item {
+    list-style: none;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 1.6;
+}
+.header-menu1-item:hover {
+    color: #3FD0D4;
+}
+.slider-content {
+    text-align: center;
+    color: white;
+}
+.slider {
+    background: url('ski.jpeg') top center/ cover no-repeat;
+    background-size: 1519px 420px;
+    position: relative;
+    z-index: -1;
+}
+.slider-header-top {
+    font-family: 'Satisfy', cursive;
+    padding-top: 90px;
+    font-size: 1.9rem;
+}
+.slider-header-bottom {
+    padding-top: 10px;
+    font-size: 4.6rem;
+    font-weight: 700;
+}
+
+.slider-text {
+    width: 100%;
+    padding:20px 360px 70px;
+    font-size: 0.8rem;
+}
+/* places */
+.places {
+    height:390px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width:1519px;
+}
+.places-item {
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    width: 290px;
+
+}
+.places-item_image {
+    width: 290px;
+    cursor: pointer;
+}
+.places-item_image:hover {
+    filter: brightness(90%);
+}
+
+.places-item-rate {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    padding-top:10px;
+    font-weight: 600;
+}
+.placs-item-rate-box i {
+    padding-right: 6px;
+}
+.places-item-des {
+    height:40px;
+    width:290px;
+    background-color:#3FD0D4;
+    position: relative;
+    top:-10px;
+    color: white;
+    font-size: 14px;
+  
+}
+.places-item-des-info {
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+}
+.places-item-des-info-box {
+    padding-left: 24px;
+}
+.places-item-des-info-box i {
+    padding-right: 5px;
+}
+.places-item-box {
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.places-item-header {
+    padding-top:20px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    padding-right: 100px;
+}
+.places-item-header:hover {
+    color: #3abdc1;
+    cursor: pointer;
+
+}
+
+.places-item-contain {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-top: 12px;
+    color: #505050;
+    padding-right:40px;
+}
+.places-button {
+    text-align: center;
+    padding-top: 40px;
+    cursor: pointer;
+}
+.places-button-edit {
+    font-size:0.5rem;
+    color:#3FD0D4;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.disabled {
+    opacity: 0.7;
+}
+.disabled:hover {
+    opacity: 1;
+}
+.video-header {
+    text-align: center;
+}
+.video-header-top {
+    padding-top: 60px;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.2rem;
+    color:#3FD0D4;
+}
+.video-header-bottom {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    padding-bottom: 30px;
+
+}
+.video-clip-button,
+.video-clip-text,
+.video-clip-click {
+    text-align: center;
+}
+.video-clip-text {
+    padding: 20px 380px 20px;
+    font-size: 0.56rem;
+    line-height: 1.6;
+    color:#505050;
+}
+.video-clip-button {
+    height:60px;
+    width:220px;
+    background-color: #3FD0D4;
+    text-align: center;
+    line-height: 60px;
+    border: none;
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.video-clip-button:hover {
+    opacity: 0.7;
+}
+.video-clip-button-text {
+    color:white;
+    text-align: center;
+    margin:auto;
+    font-size: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+
+.slider-review {
+    background:url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/skiing-parallax-1.jpg') top center/cover no-repeat;
+    padding-top: 100px;
+}
+.slider-review-header {
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+.slider-review-header-sub {
+    width: 100%;
+    padding:20px 400px 70px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+.slider-review-profile {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-review-profile-box {
+    width: 480px;
+    height:230px;
+    background-color: white;
+    border-radius: 3px;
+}
+.slider-review-profile-avt img {
+    transform: scale(1);
+    transition: all 0.6s ease-in-out;
+}
+.slider-review-profile-avt img:hover {
+    transform: scale(1.06);
+}
+.slider-review-profile-avt {
+    float: left;
+    padding:40px 16px 0px 40px ;
+    cursor: pointer;
+    overflow: hidden;
+}   
+
+.slider-review-profile-name {
+    padding-top:40px;
+    font-weight: 600;
+    font-size: 22px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+.slider-review-profile-name:hover {
+    color: #3FD0D4;
+}
+.slider-review-profile-rate {
+    font-size: 12px;
+    color: #3FD0D4;
+    padding: 14px 4px 
+}
+.slider-review-profile-text {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-right: 40px;
+    margin-bottom: 15px;
+}
+.slider-review-profile-career {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 163px;
+}
+.slider-review-button {
+    padding-bottom: 100px;
+}
+.slider-enjoy-header {
+    text-align: center;
+}
+.slider-enjoy-header-text{
+    padding: 0px 400px 60px;
+    color: #212121 !important;
+}
+.slider-enjoy-places {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0px 100px;
+}
+.slider-enojy-places-box {
+    width: 25%;
+}
+.slider-enojy-places-header {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.slider-enjoy-places-text {
+    padding: 25px 60px 0px;
+}
+.slider-enjoy-places-pic-click {
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition: 0.3s ease-in;
+}
+.slider-enjoy-places-pic-click:hover {
+    transform: translateY(-5px);
+}
+.slider-summary{
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-summary-navbar-active {
+    height: 200px ;
+    width:25%;
+    background-color: #3FD0D4;
+    margin-top: 336.46px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    display: none;
+}
+.slider-summary-navbar-active:hover {
+    display: block;
+}
+.slider-summary-navbar-active-text {
+    text-align: center;
+    color: white;
+}
+.slider-summary-navbar-active-header {
+    padding-top:30px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.slider-summary-navbar-active-des {
+    line-height: 1.7;
+    font-size: 14px;
+    padding: 20px 20px;
+}
+.slider-summar-navbar-active-social i {
+    padding: 0px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.slider-summar-navbar-active-social-click:hover {
+    color:#212121;
+}
+.slider-summary-pic {
+    width: 25%;
+}
+.slider-summary-navbar {
+    width: 100%;
+    height:300px;
+    background-color: #3abdc1;
+}
+.slider-summary-navbar-text {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 100px 100px 0px;
+    height:100%;
+    color: white;
+    font-weight: 700;
+}
+.slider-summary-navbar-text-box {
+    width: 25%;
+}
+.slider-summary-navbar-text-number {
+    font-size: 2.5rem;
+}
+.slider-summary-navbar-text-des {
+    font-size: 0.7rem;
+    padding-top:10px;
+}
+.winter-resort {
+    text-align: center;
+}
+.winter-resort-header-text {
+    padding:0px 440px 40px;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    color: #212121;
+
+}
+.winter-resort-header-bottom {
+    padding-bottom: 10px;
+}
+
+.winter-resort-places {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+.winter-resort-places-pic-text {
+    line-height: 380px;
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+    padding:0px 144px;
+    font-family: 'Satisfy';
+}
+.pic2-text {
+    line-height:240px;
+
+}
+.winter-resort-places-pic1{
+    background: url('sapa.jpg') top center/cover no-repeat;
+    position: relative;
+    border-radius: 50%;
+}
+
+.winter-resort-places-pic2{
+    background: url('paris.jpg') top center/cover no-repeat;
+    position: relative;
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+}
+.winter-resort-places-fav-icon {
+    color:white;
+    z-index: 2;
+    background-color: #3abdc1;
+    font-size: 14px;
+    padding:16px;
+    margin-top: 20px;
+    margin-left: 250px;
+    border-radius: 50%;
+}
+
+.winter-resort-places-pic3{
+    background: url('hanoi.jpg') top center/cover no-repeat ;
+    position: relative;
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+    overflow: hidden;
+}
+.winter-resort-box:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease-out;
+}
+.winter-resort-box {
+    cursor: pointer;
+}
+
+
+
+.footer {
+    height:480px;
+    width: 100%;
+    background-color: #222;
+}
+.winter-resort {
+    padding-bottom: 100px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding:40px 120px;
+}
+.footer-box {
+    width: 25%;
+    padding-top: 70px;
+}
+.footer-header-text {
+    color:#A9A9A9;
+}
+.footer-header-contact {
+    color: white;
+    font-size: 0.6rem;
+}
+.footer2-split {
+    width: 100%;
+    height:1px;
+    background-color:white;
+}
+.footer-col2-date {
+    color: white;
+    font-size: 14px;
+    padding:10px 0 20px;
+}
+.footer2{
+    background-color: #222;
+}
+.footer2-credit {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 10px 0px;
+}
+.footer-header-contact {
+    padding-top: 10px;
+}
+.footer-header-contact-icon {
+    padding: 10px 10px 10px 0px;
+}
+
+.footer-col3-name {
+    outline: none;
+    border: none;
+    padding: 10px 80px 10px 40px;
+    font-size: 0.5rem;
+    margin-bottom: 5px;
+}
+.footer-col3-text {
+    margin-bottom: 30px;
+}
+.footer-col3-box {
+    float: left;
+    overflow: hidden;
+    width: 280px;
+}
+.footer-col3-icon {
+    padding: static;
+    padding-top: 20px;
+}
+.footer-col3-submit {
+    position: absolute;
+    color:white;
+}
+.footer-header-contact-hover:hover {
+    color: #3FD0D4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-col2-text:hover,
+.footer-col2-date:hover {
+    color: #3FD0D4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-button {
+    height:52px;
+    width: 280px;
+    background-color: #3FD0D4;
+    color: white;
+    text-align: center;
+    line-height: 52px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-button-text {
+    letter-spacing: 1.4px;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+.footer-button:hover {
+    background-color: white;
+    color:black;
+}
+.footer-col3-box i {
+    position: absolute;
+    z-index: 1;
+    color:#A9A9A9;
+    font-size: 0.6rem;
+    line-height: 34px;
+    text-align: center;
+    margin-left: 18px;
+}
